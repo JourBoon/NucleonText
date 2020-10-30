@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 public class NucleonEditor extends Application {
     @Override
     public void start(Stage editor) throws Exception {
-
+        
         editor.setTitle("NucleonText Editor");
         editor.show();
     }
