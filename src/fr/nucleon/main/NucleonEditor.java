@@ -1,26 +1,20 @@
 package fr.nucleon.main;
 
 import javafx.application.Application;
-import javafx.geometry.Pos;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
+
 
 
 public class NucleonEditor extends Application {
     @Override
     public void start(Stage editor) throws Exception {
-
-        BorderPane root = new BorderPane();
-        Scene scene = new Scene(root);
+        FXMLLoader root = new FXMLLoader(getClass().getResource("ui.fxml"));
+        root.setControllerFactory(t -> new EditorController(new EditorModel()));
+        editor.setScene(new Scene(root.load()));
         editor.setTitle("NucleonText Editor V0.1.0");
-        editor.setScene(scene);
-        root.setStyle("-fx-background-color: #3A3A3A;");
-
-
-
-        root.getChildren().addAll();
         editor.show();
     }
 

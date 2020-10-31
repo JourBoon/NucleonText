@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="995.0" style="-fx-background-color: #808080;"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.nucleon.main.EditorController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu text="File">
+            <items>
+              <MenuItem onAction="#onSave" text="Save" />
+                  <MenuItem onAction="#onLoad" text="Load" />
+                  <MenuItem onAction="#onClose" text="Close App" />
+                  <MenuItem onAction="#onSaveas" text="Save As" />
+            </items>
+          </Menu>
+          <Menu text="Edit">
+            <items>
+              <MenuItem text="Coming Soon" />
+            </items>
+          </Menu>
+          <Menu text="Help">
+            <items>
+              <MenuItem text="About" />
+                  <MenuItem text="Releases Git" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #454545;" BorderPane.alignment="CENTER">
+         <children>
+            <Hyperlink layoutX="14.0" layoutY="532.0" prefHeight="23.0" prefWidth="162.0" text="GitHub Releases" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <TextArea fx:id="areaText" opacity="0.24" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Constantia Bold" size="18.0" />
+         </font>
+      </TextArea>
+   </center>
+</BorderPane>
