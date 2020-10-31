@@ -47,7 +47,7 @@
    <center>
       <TextArea fx:id="areaText" opacity="0.24" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <font>
-            <Font name="Constantia Bold" size="18.0" />
+            <Font name="Trebuchet MS" size="18.0" />
          </font>
       </TextArea>
    </center>
